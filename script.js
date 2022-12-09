@@ -8,12 +8,17 @@ function validateGuess() {
     alert("Please enter your guess.");
     return false;
   //then check if the guess is the correct length
-    } else if (guess.length != 5) {
-         alert("Your guess must be 5 letters long");
-         return false; 
     } 
-     else {
+  else if (guess.length != 5) {
+    alert("Your guess must be 5 letters long");
+    return false; 
+    } 
+   else {
     alert("A good guess!");
     return true;
    }  
+}
+
+function Test() {
+  alert("Testing...");
 }
