@@ -14,8 +14,15 @@
     <div id="game-board">
         <form name="Guess1">
             <input type="text" id="G1" name="G1" maxlength="5" size="5">
-            <button onClick="Test()">Submit</button>
+            <button id="btnCount" onClick="Test()">Submit</button>
         </form>
-    </div>    
+    </div>  
+    <script>
+        let btn = document.getElementById('btnCount');
+        btn.addEventListener('click', () => {
+            let headings = document.getElementsByTagName('h1');
+            alert(`The number of H1 tags: ${headings.length}`);
+        });
+    </script>
 </body>
 </html>
