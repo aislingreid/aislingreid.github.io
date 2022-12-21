@@ -1,4 +1,86 @@
 h1 {
- text-align: center;
- color: blue;
+    text-align: center;
+    color: #575757;
+    font-family: Helvetica, sans-serif;
+    font-size: 50px;
+    padding: 5px 10px;
+   }
+
+h2 {
+    text-align: center;
+    color: #575757;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-weight: lighter
+   }
+
+p {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  font-size: 50px;
+  color: #47C800;
+}
+
+#game-board {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #E6E6E6;
+    width: 100%;
+  }
+
+.letter-box {
+    border: 2px solid #E6E6E6;
+    border-radius: 50px;
+    margin: 10px 2px 2px 2px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    float: left;
+    background-color: white;
+  }
+
+.letter-row {
+    display: flex;
+  }
+
+.character {
+    margin: 2px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    height: 2rem;
+    width: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    float: left;
+    color: #575757;
+  }
+button {
+    background-color: #47C800;
+    border: 2px solid #47C800;
+    border-radius: 8px;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+  }
+input {
+    border: none;
+    padding: 10px 30px;
+    font: 32px;
+    font-family: Helvetica, sans-serif;
+    outline: none;
+    width: 30%;
 }
