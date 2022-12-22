@@ -3,7 +3,6 @@ h1 {
     color: #575757;
     font-family: Helvetica, sans-serif;
     font-size: 50px;
-    padding: 5px 10px;
    }
 
 h2 {
@@ -16,10 +15,11 @@ h2 {
     font-weight: lighter
    }
 
-p {
+h1 span {
   font-family: Brush Script MT, Brush Script Std, cursive;
-  font-size: 50px;
+  font-size: 60px;
   color: #47C800;
+  font-weight: lighter
 }
 
 #game-board {
@@ -68,19 +68,19 @@ p {
 button {
     background-color: #47C800;
     border: 2px solid #47C800;
-    border-radius: 8px;
+    border-radius: 0px 8px 8px 0px;
     color: white;
-    padding: 8px 30px;
+    padding: 6px 30px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 24px;
-  }
+}
+
 input {
     border: none;
-    padding: 10px 30px;
-    font: 32px;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 24px;
     font-family: Helvetica, sans-serif;
     outline: none;
-    width: 30%;
+    width: 100px;
+    height: 41px;
 }
