@@ -10,7 +10,23 @@
 </head>
 <body>
 
+
     <div id="game-board">
+        <button id="myBtn" class = "info-button">How to Play</button>
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You have 6 chances to try and guess the word. The colour of the letters shows you whether your guess was correct or not!</p>
+            <ul>
+                <li>Green means a letter is in the word and in the correct place</li>
+                <li>Orange means a letter is in the word but not in the correct place</li>
+                <li>Grey means a letter is not in the word</li>
+            </ul>
+          </div>
+
+        </div>
         <h1> Wordle<span> remix</span></h1>
 
 
@@ -103,5 +119,6 @@
     </div>
 
     <script src="script.js" type="module"></script>
+
 </body>
 </html>
