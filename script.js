@@ -5788,8 +5788,20 @@ window.onclick = function(event) {
 
 // Function to check a guess
   function Test() {
+
     // Define the user's guess
     var guess = document.getElementById('Guess').value.toLowerCase();
+    // Check the guess is the correct length
+    if (guess.length != 5) {
+        alert("Your guess must be 5 letters long");
+        return false;
+    }
+    // Check the guess is an allowed word
+    if (WORDS.includes(guess) == false) {
+        alert("Guess not in word list");
+        return false;
+    }
+
     //Check which guess number we are on, if the user has had 6 guesses and still gets it wrong then display message.
     var x = 0
     for (var k = 1; k < 8; k++) {
@@ -5808,16 +5820,7 @@ window.onclick = function(event) {
         break;
     }
 }
-// Check the guess is the correct length
-if (guess.length != 5) {
-    alert("Your guess must be 5 letters long");
-    return false;
-}
-// Check the guess is an allowed word
-if (WORDS.includes(guess) == false) {
-    alert("Guess not in word list");
-    return false;
-}
+
 for (var i = 0; i < 5; i++) {
 //loop through each box
     //if the character is in the word in the same position, colour it green on the game board and alphabet
@@ -5892,6 +5895,5 @@ if (guess == answer) {
     };
 }
 }
-
 
 
