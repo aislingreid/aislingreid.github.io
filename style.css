@@ -3,6 +3,8 @@ h1 {
     color: #575757;
     font-family: Helvetica, sans-serif;
     font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 10px;
    }
 
 h2 {
@@ -28,6 +30,7 @@ h1 span {
     flex-direction: column;
     background-color: #E6E6E6;
     width: 100%;
+    padding-bottom: 50px;
   }
 
 .letter-box {
